@@ -5,7 +5,7 @@
 # env.read_env()
 # https://officialfastfood.herokuapp.com/
 
-BOT_TOKEN = '5612855390:AAFHT5Oy_pSg_ZjOr-3Fz33NdwNK8AvW_A8'  # Bot toekn
+BOT_TOKEN = '5468727331:AAEEGZ2MUZtoZmI8kgkWZ5NlmaBcMmUsZjk'  # Bot toekn
 ADMINS = [874354497]  # adminlar ro'yxati
 ADDRES=https://awsfastfood.herokuapp.com/  # Xosting ip manzili
 
