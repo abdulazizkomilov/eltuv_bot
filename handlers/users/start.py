@@ -644,12 +644,12 @@ async def regorder4(message: Message, state: FSMContext):
         if db.get("comment"):
             com += f'<b>Izoh</b>: {db.get("comment")}'
         text = f"<b>Yangi buyurtma {date}</b>\n\nID: #{res[1]}A\n<b>User: </b> <a href='tg://user?id={message.from_user.id}'>" \
-               f"{message.from_user.first_name}</a>\n" \
+               f"{message.from_user.first_name} @{message.from_user.username} </a>\n" \
                f"Nomer: <a href='tel:{num}'>{num}</a>\nTo'lov:{pay}\nYetkazib berish:{delever}\n{com}\n{txt}"
         if db.get("address"):
             address = db.get("address")
             text = f"<b>Yangi buyurtma {date}</b>\n\nID:#{res[1]}A\n<b>User: </b><a href='tg://user?id={message.from_user.id}'>" \
-                   f"{message.from_user.first_name}</a>\n" \
+                   f"{message.from_user.first_name} @{message.from_user.username} </a>\n" \
                    f"Nomer: {num}\nTo'lov: {pay}\n" \
                    f"Yetkazib berish: {delever}\nManzil: {db.get('address')}\n\n{com}\n\n{txt}"
 
