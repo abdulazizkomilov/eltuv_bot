@@ -1,2 +1,2 @@
-web gunicorn tbot.wsgi --log-file -
+web tbot.wsgi --log-file -
 worker: python app.py
