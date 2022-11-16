@@ -1,2 +1,2 @@
-worker: python manage.py runserver
-worker: python app.py
+web: python app.py
+web: gunicorn tbot.wsgi --log-file -
