@@ -1,2 +1,2 @@
-worker: python manage.py runserver
+web: gunicorn myproject.wsgi
 worker: python app.py
