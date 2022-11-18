@@ -321,10 +321,10 @@ async def regorder(message: Message, state: FSMContext):
         )
 
         if lang == 'rus':
-            await message.answer('Отправьте или введите свой номер телефона Пример: +998931159963',
+            await message.answer('Отправьте или введите свой номер телефона Пример: +998940938189',
                                  reply_markup=number_rus)
         else:
-            await message.answer('Telefon raqamingizni yuboring yoki kiriting Misol: +998931159963',
+            await message.answer('Telefon raqamingizni yuboring yoki kiriting Misol: +998940938189',
                                  reply_markup=number)
         await RegOrderData.number.set()
 
@@ -333,10 +333,10 @@ async def regorder(message: Message, state: FSMContext):
             {"pay": message.text}
         )
         if lang == 'rus':
-            await message.answer('Отправьте или введите свой номер телефона Пример: +998931159963',
+            await message.answer('Отправьте или введите свой номер телефона Пример: +998940938189',
                                  reply_markup=number_rus)
         else:
-            await message.answer('Telefon raqamingizni yuboring yoki kiriting Misol: +998931159963',
+            await message.answer('Telefon raqamingizni yuboring yoki kiriting Misol: +998940938189',
                                  reply_markup=number)
 
         await RegOrderData.number.set()
@@ -397,10 +397,10 @@ async def regorder2(message: Message, state: FSMContext):
     txt_rus += f'\n<b>Общий:</b> {x:,} sum'.replace(',', ' ')
     if message.text == '⬅️ Orqaga' or message.text == '⬅️ Назад':
         if lang == 'rus':
-            await message.answer('Отправьте или введите свой номер телефона Пример: +998931159963',
+            await message.answer('Отправьте или введите свой номер телефона Пример: +998940938189',
                                  reply_markup=number_rus)
         else:
-            await message.answer('Telefon raqamingizni yuboring yoki kiriting Misol: +998931159963',
+            await message.answer('Telefon raqamingizni yuboring yoki kiriting Misol: +998940938189',
                                  reply_markup=number)
         await RegOrderData.number.set()
     elif message.text == '🏫 Olib ketish' or message.text == '🏫 Самовывоз':
